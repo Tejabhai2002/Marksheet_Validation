@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="asst2style.css">
+    <title>Assignment 2</title>
+    <style>
+        body{
+            background: #000;
+    color: rgb(24, 24, 112);
+    align-content: center;
+
+    }
+    h1{
+        align-items: center;
+        color: rgb(60, 20, 194);
+    }
+    h1{
+        align-items: center;
+        color: rgb(60, 20, 194);
+    }
+    h1{
+        align-items: center;
+        color: rgb(60, 20, 194);
+    }
+    .userinput input{
+    width: 660px;
+    height: 33px;
+    background-color: rgb(247, 249, 251);
+    }
+    form {
+        border: rgb(142, 222, 240);
+
+    }
+    div.box{
+        text-align: center;
+    }
+    table{
+        border: 1;
+        border-style: double;
+        column-gap: 10px;
+        row-gap: 10px;
+        color: rgb(70, 16, 88);
+    }
+    .feild1{
+    background-color: rgb(227, 239, 248);
+    margin-bottom: 5px;
+    padding: 25px;
+   
+}
+.feild2{
+    background-color: rgb(227, 239, 248);
+    margin-bottom: 5px;
+    padding: 25px;
+}
+.feild3{
+    background-color: rgb(227, 239, 248);
+    padding: 25px;
+}
+
+    </style>
+</head>
+<body>
+    
+    <form action="" class="mainform" name="validform" onsubmit="return myFunction()"> 
+        <div class="box">
+            <img src="University of mumbai.png" height="100px" width="100px"></img>
+        </div>
+        
+        <h2 align="center">UNIVERSITY OF MUMBAI</h2>
+        <h3 align="center">ACADEMIC YEAR-2022/23</h3>
+        <h1 align="center"><u>MARKSHEET VALIDATION</u></h1>
+    <div class="container ">
+        <form>
+            <fieldset id="1">
+        <div>
+            <div class="name">
+                <lable>NAME</lable>
+                <input id="N" type="text" name=" " placeholder="NAME ">
+            </div>
+            <div class="dept">
+                <lable>DEPARTMENT</lable>
+                <input id="D" type="text" name=" " placeholder="department ">
+            </div>
+            <div class="sem">
+                <lable>SEMESTER</lable>
+                <input id="S" maxlength="1" type="number" name=" " placeholder="semester ">
+            </div>
+            <div class="seat">
+                <lable>SEAT NO.</lable>
+                <input id="seatno" maxlength="6" type="number" name=" " placeholder="seat no. ">
+            </div>
+            
+        </div>
+            </fieldset>
+           
+        <!--div>
+            <button onclick="sum()">Submit</button>
+            <button type="reset">Reset</button>
+        </div-->
+        <br><br>
+        </form>
+        <div>
+            <fieldset id="2">
+            <table border="1">
+                <tr>
+                   <th><strong> CODE </strong> </th>
+                   <th><strong>SUBJECT</strong> </th>
+                   <th><strong>UT1</strong> </th>
+                   <th><strong>UT2</strong> </th>
+                   <th><strong>AVERAGE</strong></th>
+                   <th><strong>FINAL</strong> </th>
+                   <th><strong>TOTAL</strong> </th>
+                </tr>
+                <tr>
+                    <td>ITC501</td>
+                    <TD align="CENTER">INTERNET PROGRAMMING</TD>
+                    <TD align="CENTER">
+                        <input id="iput1" maxlenght="2" max="20"  type="number"  placeholder="Marks ">
+                    </TD>
+                    <TD align="CENTER">
+                        <input id="iput2" maxlenght="2" max="20" type="number"  placeholder="Marks ">
+                    </TD>
+                    <TD align="CENTER" id="ipavg">
+                    
+                    </TD>
+                    <TD align="CENTER">
+                        <input id="ipfinal" maxlenght="2" max="80" type="number"  placeholder="Marks ">
+                    </TD>
+                    <TD align="CENTER" id="bookone">
+                        
+                    </TD>
+                </tr>
+                <tr>
+                    <td>ITC502</td>
+                    <TD align="CENTER">SOFTEWARE ENGINEERING</TD>
+                    <TD align="CENTER">
+                        <input id="seut1" maxlenght="2"  max="20"type="number"  placeholder="Marks ">
+                    </TD>
+                    <TD align="CENTER">
+                        <input id="seut2" maxlenght="2" max="20" type="number"  placeholder="Marks ">
+                    </TD>
+                    <TD align="CENTER" id="seavg">
+                        
+                    </TD>
+                    <TD align="CENTER">
+                        <input id="sefinal" maxlenght="2" max="80" type="number"  placeholder="Marks ">
+                    </TD>
+                    <TD align="CENTER" id="booktwo">
+                        
+                    </TD>
+                </tr>
+                <tr>
+                    <td>ITC503</td>
+                    <TD align="CENTER">COMPUTER NETWORK AND SECURITY</TD>
+                    <TD align="CENTER">
+                        <input id="cnsut1" maxlenght="2" max="20" type="number"  placeholder="Marks ">
+                    </TD>
+                    <TD align="CENTER">
+                        <input id="cnsut2" maxlenght="2" max="20" type="number"  placeholder="Marks ">
+                    </TD>
+                    <TD align="CENTER" id="cnsavg">
+                        
+                    </TD>
+                    <TD align="CENTER">
+                        <input id="cnsfinal"  maxlenght="2" max="80" type="number"  placeholder="Marks ">
+                    </TD>
+                    <TD align="CENTER" id="bookthree">
+                        
+                    </TD>
+                </tr>
+                <tr>
+                    <td>ITC504</td>
+                    <TD align="CENTER">ENTREPRENURESHIP AND E-BUSINESS</TD>
+                    <TD align="CENTER">
+                        <input id="ebut1" maxlenght="2" max="20" type="number"  placeholder="Marks ">
+                    </TD>
+                    <TD align="CENTER">
+                        <input id="ebut2" maxlenght="2" max="20" type="number"  placeholder="Marks ">
+                    </TD>
+                    <TD align="CENTER" id="ebavg">
+                     
+                    </TD>
+                    <TD align="CENTER">
+                        <input id="ebfinal" maxlenght="2" max="80" type="number"  placeholder="Marks ">
+                    </TD>
+                    <TD align="CENTER" id="bookfour">
+                        
+                    </TD>
+                </tr>
+                <tr>
+                    <td>ITC505</td>
+                    <TD align="CENTER">ADVANCE DATA MANAGEMENT TENCHNOLOGY</TD>
+                    <TD align="CENTER">
+                        <input id="admtut1" maxlenght="2" max="20" type="number"  placeholder="Marks ">
+                    </TD>
+                    <TD align="CENTER">
+                        <input id="admtut2" maxlenght="2" max="20" type="number"  placeholder="Marks ">
+                    </TD>
+                    <TD align="CENTER" id="admtavg">
+                        
+                    </TD>
+                    <TD align="CENTER">
+                        <input id="admtfinal" maxlenght="2" max="80" type="number"  placeholder="Marks ">
+                    </TD>
+                    <TD align="CENTER" id="bookfive">
+                       
+                    </TD>
+                </tr>
+            </table>
+        </fieldset>
+        <br><br>
+            <div>
+                <button onclick="calculate()">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+            <br><br>
+            <fieldset id="3">
+            <table border="1">
+                <tr>
+                    <TD>NAME</TD>
+                    <TD colspan="4"></TD>
+                </tr>
+                <tr>
+                    <TD>DEPARTMENT</TD>
+                    <TD colspan="4"></TD>
+                </tr>
+                <tr>
+                    <TD>SEMESTER</TD>
+                    <TD colspan="4"></TD>
+                </tr>
+                <tr>
+                    <TD>SEAT NO.</TD>
+                    <TD colspan="4"></TD>
+                </tr>
+                
+                <tr>
+                    <th align="cetner"><strong>Code</strong></th>
+                    <th align="center"><strong>Subject</strong></th>
+                    <th align="center"><strong>Total</strong></th>
+                    <th align="center"><strong>Obtained</strong></th>
+                    <th align="center"><strong>Grade</strong></th>
+                    
+                </tr>
+                <tr>
+                    <td align="center">ITC501</td>
+                    <td align="center">Internet Programing</td>
+                    <td align="center">100</td>
+                    <td align="center" id="obtain1"></td>
+                    <td align="center" id="grade1"></td>
+                </tr>
+                <tr>
+                    <TD align="center">ITC502</TD>
+                    <td align="center">Software Engineering</td>
+                    <td align="center">100</td>
+                    <td align="center" id="obtain2"></td>
+                    <td align="center" id="grade2"></td>
+                   
+                </tr>
+                <tr>
+                    <TD align="center">ITC503</TD>
+                    <td align="center">Computer Network Security</td>
+                    <td align="center">100</td>
+                    <td align="center" id="obtain3"></td>
+                    <td align="center" id="grade3"></td>
+                    
+                </tr>
+                <tr>
+                    <TD align="center">ITC504</TD>
+                    <td align="center">Entreprenureship and E-business</td>
+                    <td align="center">100</td>
+                    <td align="center" id="obtain4"></td>
+                    <td align="center" id="grade4"></td>
+                    
+                </tr>
+                <tr>
+                    <TD align="center">ITC505</TD>
+                    <td align="center">Advance Data Management Technology</td>
+                    <td align="center">100</td>
+                    <td align="center" id="obtain5"></td>
+                    <td align="center" id="grade5"></td>
+                   
+                </tr>
+                </table>
+            </fieldset>
+            <br><br>
+            <fieldset id="4">
+                <table border="1">
+                    <tr>
+                        <td>Total Marks Obtained:</td>
+                        <td id="total"></td>
+                    </tr>
+                    <tr>
+                        <td>Percentage</td>
+                        <td id="per"></td>
+                    </tr>
+                    <tr>
+                        <td>CGPA:</td>
+                        <td id="CGPA"></td>
+                     </tr>
+                    <tr>
+                        <td>Remarks:</td>
+                        <td id="remarks"></td>
+                    </tr>
+            </table>
+        </fieldset>
+        </div>
+    </div>
+    </form>
+</body>
+
+
+<!-- JAVASCRIPT STARTS FROM HERE-->
+
+<script>
+    function myFunction()
+        var a1=parseInt((document.getElementById('iput1') + document.getElementById('iput1') )/2);
+        var b1=parseInt((document.getElementById('seut1') + document.getElementById('seut1'))/2);
+        var c1=parseInt((document.getElementById('cnsut1') + document.getElementById('cnsut1'))/2);
+        var d1=parseInt((document.getElementById('ebut1') + document.getElementById('ebut1'))/2);
+        var e1=parseInt((document.getElementById('admtut1') + document.getElementById('admtut1'))/2);
+        if (a1>20 || b1>20 || c1>20 || d1>20 || e1>20){
+            alert("Please enter correct value")
+        }
+        else
+        {
+            var obtain=a1;
+            document.getElementById("ipavg").innerHTML=obtain;
+            var obtain=b1;
+            document.getElementById("seavg").innerHTML=obtain;
+            var obtain=c1;
+            document.getElementById("cnsavg").innerHTML=obtain;
+            var obtain=d1;
+            document.getElementById("ebavg").innerHTML=obtain;
+            var obtain=e1;
+            document.getElementById("admtavg").innerHTML=obtain;
+        } 
+
+        var a2=parseInt(document.getElementById('ipavg') + document.getElementById('ipfinal') );
+        var b2=parseInt(document.getElementById('seavg') + document.getElementById('sefinal'));
+        var c2=parseInt(document.getElementById('cnsavg') + document.getElementById('cnsfinal'));
+        var d2=parseInt(document.getElementById('ebavg') + document.getElementById('ebfinal'));
+        var e2=parseInt(document.getElementById('admtavg') + document.getElementById('admtfinal'));
+        if (a2>100 || b2>100 || c2>100 || d2>100 || e2>100){
+            alert("Please enter correct value")
+        }
+        else
+        {
+            var obtain1=a;
+            document.getElementById("bookone").innerHTML=obtain1;
+            var obtain1=b;
+            document.getElementById("booktwo").innerHTML=obtain1;
+            var obtain1=c;
+            document.getElementById("bookthree").innerHTML=obtain1;
+            var obtain1=d;
+            document.getElementById("bookfour").innerHTML=obtain1;
+            var obtain1=e;
+            document.getElementById("bookfive").innerHTML=obtain1;
+        }    
+
+    function calculate()
+    {
+        var N=document.getElementById('N').value;
+        var D=document.getElementById('D').value;
+        var s=document.getElementById('S').value;
+        var seatno=document.getElementById('seatno').value;
+
+
+        var a=parseInt(document.getElementById('bookone').value);
+        var b=parseInt(document.getElementById('booktwo').value);
+        var c=parseInt(document.getElementById('bookthree').value);
+        var d=parseInt(document.getElementById('bookfour').value);
+        var e=parseInt(document.getElementById('bookfive').value);
+        if (a>100 || b>100 || c>100 || d>100 || e>100){
+            alert("Please enter correct value")
+        }
+        else
+        {
+            var obtain2=a;
+            document.getElementById("obtain1").innerHTML=obtain2;
+            var obtain2=b;
+            document.getElementById("obtain2").innerHTML=obtain2;
+            var obtain2=c;
+            document.getElementById("obtain3").innerHTML=obtain2;
+            var obtain2=d;
+            document.getElementById("obtain4").innerHTML=obtain2;
+            var obtain2=e;
+            document.getElementById("obtain5").innerHTML=obtain2;
+        }    
+            var total=a+b+c+d+e;
+            document.getElementById("total").innerHTML=total;
+            var per=(total/500)*100;
+            document.getElementById("per").innerHTML=per;
+            var CGPA=(per/9.5);
+            document.getElementById("CGPA").innerHTML=CGPA;
+
+
+             
+            if (a>40 && b>40 && c>40 && d>40 && e>40){
+                document.getElementById("remarks").innerHTML="<span style='color:#292'> Pass </span>";
+           
+        }
+        else  
+        {
+    
+                document.getElementById("remarks").innerHTML="<span style='color:#FF0000'> Fail </span>";
+              
+        }
+        if (a>=80 ){
+            document.getElementById("grade1").textContent=   "O";
+        }
+        else if (a>=70 && a<80){
+            document.getElementById("grade1").textContent=  "A";
+        }
+        else if (a>=60  && a<70){
+            document.getElementById("grade1").textContent=  "B";
+        }
+        else if (a>=55 && a<60){
+            document.getElementById("grade1").textContent=  "C";
+        }
+        else if (a>=50 && a<55){
+            document.getElementById("grade1").textContent=  "D";
+        }
+        else if (a>=40 && a<50){
+            document.getElementById("grade1").textContent=  "E";
+        }
+        else {
+            document.getElementById("grade1").textContent=  "F";
+        }
+
+
+        if (b>=80 ){
+            document.getElementById("grade2").textContent=   "O";
+        }
+        else if (b>=70 && b<80){
+            document.getElementById("grade2").textContent=  "A";
+        }
+        else if (b>=60  && b<70){
+            document.getElementById("grade2").textContent=  "B";
+        }
+        else if (b>=55 && b<60){
+            document.getElementById("grade2").textContent=  "C";
+        }
+        else if (b>=50 && b<55){
+            document.getElementById("grade2").textContent=  "D";
+        }
+        else if (b>=40 && b<50){
+            document.getElementById("grade2").textContent=  "E";
+        }
+        else {
+            document.getElementById("grade2").textContent=  "F";
+        }
+
+
+
+        if (c>=80 ){
+            document.getElementById("grade3").textContent=   "O";
+        }
+        else if (c>=70 && c<80){
+            document.getElementById("grade3").textContent=  "A";
+        }
+        else if (c>=60  && c<70){
+            document.getElementById("grade3").textContent=  "B";
+        }
+        else if (c>=55 && c<60){
+            document.getElementById("grade3").textContent=  "C";
+        }
+        else if (c>=50 && c<55){
+            document.getElementById("grade3").textContent=  "D";
+        }
+        else if (c>=40 && c<50){
+            document.getElementById("grade3").textContent=  "E";
+        }
+        else {
+            document.getElementById("grade3").textContent=  "F";
+        }
+
+
+
+        if (d>=80 ){
+            document.getElementById("grade4").textContent=   "O";
+        }
+        else if (d>=70 && d<80){
+            document.getElementById("grade4").textContent=  "A";
+        }
+        else if (d>=60  && d<70){
+            document.getElementById("grade4").textContent=  "B";
+        }
+        else if (d>=55 && d<60){
+            document.getElementById("grade4").textContent=  "C";
+        }
+        else if (d>=50 && d<55){
+            document.getElementById("grade4").textContent=  "D";
+        }
+        else if (d>=40 && d<50){
+            document.getElementById("grade4").textContent=  "E";
+        }
+        else {
+            document.getElementById("grade4").textContent=  "F";
+        }
+
+
+
+        if (e>=80 ){
+            document.getElementById("grade5").textContent=   "O";
+        }
+        else if (e>=70 && e<80){
+            document.getElementById("grade5").textContent=  "A";
+        }
+        else if (e>=60  && e<70){
+            document.getElementById("grade5").textContent=  "B";
+        }
+        else if (e>=55 && e<60){
+            document.getElementById("grade5").textContent=  "C";
+        }
+        else if (e>=50 && e<55){
+            document.getElementById("grade5").textContent=  "D";
+        }
+        else if (e>=40 && e<50){
+            document.getElementById("grade5").textContent=  "E";
+        }
+        else {
+            document.getElementById("grade5").textContent=  "F";
+        }
+       
+    }  
+</script>
+</html>
